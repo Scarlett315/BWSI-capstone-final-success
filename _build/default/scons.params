@@ -1,0 +1,31 @@
+timestamp: "30000732893"
+arch: ICE40
+fpga_info {
+  fpga_id: "ice40hx1k-vq100"
+  part_num: "ICE40HX1K-VQ100"
+  size: "1k"
+  ice40_params {
+    type: "hx1k"
+    package: "vq100"
+  }
+}
+environment {
+  platform_id: "darwin-arm64"
+  is_windows: false
+  terminal_mode: FORCE_TERMINAL
+  theme_name: "light"
+  debug_level: 0
+  yosys_path: "/Users/scarlett/.apio/packages/oss-cad-suite/share/yosys"
+  trellis_path: "/Users/scarlett/.apio/packages/oss-cad-suite/share/trellis"
+  scons_shell_id: "bash"
+}
+apio_env_params {
+  env_name: "default"
+  board_id: "go-board"
+  top_module: "hill_cipher_top.v"
+}
+target {
+  test {
+    default_option: false
+  }
+}
